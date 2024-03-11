@@ -24,7 +24,8 @@ class LongCIUNet(pl.LightningModule):
         self.loss = DiceLoss(include_background=True, to_onehot_y=True, softmax=True)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return self.model(x)
+        y_hat: torch.Tensor = self.model(x)
+        return y_hat  # softmax is applied in loss
     
     def training_step(self, train_batch, _):
         x, y, _ = train_batch

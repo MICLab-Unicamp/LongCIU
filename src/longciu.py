@@ -61,7 +61,8 @@ class DataMaskSlicer(Dataset):
         if self.transform is not None:
             data, mask = self.transform(data, mask)
 
-        metadata = {"ID": f"{self.name}_{idx}"}
+        metadata = {"ID": f"{self.name}_{idx}",
+                    "idx": idx}
 
         return data, mask, metadata
 
@@ -111,7 +112,7 @@ class LongCIUDataModule(pl.LightningDataModule):
         stage: one of train, val, test or all. All will return all slices.
         transform: object that takes as input both image and target and returns a tuple of transformed image and target
         '''
-        print(f"LongCIUDataModule setup called with stage: {stage}")
+        print(f"WARNING: PL template stage {stage} argument ignored. Initializing all three splits.")
         self.train_dataset = DataMaskSlicer("train_longciu", self.data, self.mask, self.splits["train"], self.train_transform)
         self.val_dataset = DataMaskSlicer("val_longciu", self.data, self.mask, self.splits["val"], self.eval_transform)
         self.test_dataset = DataMaskSlicer("test_longciu", self.data, self.mask, self.splits["test"], self.eval_transform)
