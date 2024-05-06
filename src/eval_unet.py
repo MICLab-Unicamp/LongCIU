@@ -119,7 +119,7 @@ def medpseg_output_wrapping(mode):
         splits = json.load(splits_file)
 
     data_path = os.path.join("../data", "longciu_img.nii.gz")
-    mask_path = "/home/diedre/diedre_phd/phd/notebooks/longci_eval/artifacts/out_medseg_25d_a100_long_silver_gold_gdl_longci_STAPLE_tgt.nii.gz"
+    mask_path = os.path.join("../data", "longciu_medpseg_output.nii.gz")
     data, mask = sitk.GetArrayFromImage(sitk.ReadImage(data_path)), sitk.GetArrayFromImage(sitk.ReadImage(mask_path))
     
     # You can customize this preprocessing if you want!
