@@ -1,0 +1,5 @@
+torch
+pytorch_lightning
+monai
+numpy
+SimpleITK
