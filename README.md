@@ -29,7 +29,7 @@ The field of supervised automated medical imaging segmentation suffers from the 
 ├── README.md\
 └── staple_pub_stats.json
 
-File tree for the dataset, including images, annotations per annotator and consensus, MEDPSeg output, optional proposed training splits, and STAPLE statistics.
+File tree for the dataset, including images, annotations per annotator and consensus, MEDPSeg output, optional proposed training splits, and STAPLE statistics. .nii.gz formats can be read using libraries such as SimpleITK or NiBabel.
 
 ## longciu_X_tgt.nii.gz
 Results from blind annotations from annotator 1, 2, and 3.
