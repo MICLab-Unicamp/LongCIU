@@ -1,6 +1,6 @@
 # DOWNLOAD LINK: Under submission
 
-Download the data and have it on this folder with the following expected directory tree:
+Download the data and extract it on this folder with the following expected directory tree:
 
 ## DIRECTORY TREE
 

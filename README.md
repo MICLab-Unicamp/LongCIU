@@ -1,5 +1,7 @@
 # Long COVID Iowa-UNICAMP dataset
 
+Download link: under submission.
+
 Thanks for downloading the Long COVID Iowa-UNICAMP dataset. If you use this data, please cite our dataset paper.
 
 A paper accompanying this dataset is under submission, and this description will be updated to include its reference in the future. 
@@ -17,6 +19,8 @@ The field of supervised automated medical imaging segmentation suffers from the 
 | *Sample CT scan slice, accompanying annotations, and final STAPLE consensus.* |
 
 # Directory tree
+
+The "longciu.zip" file provided in the download link should contain the following files:
 
 .\
 ├── longciu_1_tgt.nii.gz\
