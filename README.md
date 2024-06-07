@@ -4,11 +4,19 @@ Thanks for downloading the Long COVID Iowa-UNICAMP dataset. If you use this data
 
 A paper accompanying this dataset is under submission, and this description will be updated to include its reference in the future. 
 
-# ABSTRACT
+# Abstract
 
 The field of supervised automated medical imaging segmentation suffers from the lack of annotated groundtruth data. This problem is even more noticeable when dealing with the segmentation of multiple types of lung findings in computed tomography with uncertain borders, such as opacities and parenchymal consolidation resulting from pneumonia. In this work, we make available the first public dataset of ground glass opacity and consolidation in the lung of Long COVID patients. The Long COVID Iowa-UNICAMP dataset (LongCIU) was built by three independent expert annotators, blindly segmenting the same 90 selected axial slices manually, without using any automated initialization. We make available not only the final consensus segmentation, but also the individual segmentation from each annotator totaling 360 slices. This dataset can be used to train and validate new automated segmentation methods and to study interrater uncertainty in lung opacities' segmentation on computed tomography. 
 
-# DIRECTORY TREE
+| ![overview](assets/overview.png) | 
+|:--:| 
+| *Overview of the dataset creation process.* |
+
+| ![sample](assets/sample.png) | 
+|:--:| 
+| *Sample CT scan slice, accompanying annotations, and final STAPLE consensus.* |
+
+# Directory tree
 
 .\
 ├── longciu_1_tgt.nii.gz\
@@ -46,11 +54,13 @@ A short description of the dataset.
 ## staple_pub_stats.json
 Output statistics from the SimpleITK STAPLE implementation, for reproducibility. 
 
-# CODE 
+# Code 
 
-Code to reproduce the STAPLE consensus, sample training, and evaluation examples, is available at: https://github.com/MICLab-Unicamp/LongCIU/tree/main/src. The GitHub repository presents the minimum code necessary to reproduce processing and technical validation involved in making our annotations of GGO and Consolidations in Long COVID patients available, and all results included in the paper. Use the requirements.txt file to create an python environment suitable to run the code if necessary.
+The software repository for this project is: https://github.com/MICLab-Unicamp/LongCIU
 
-# REFERENCES
+Source code to reproduce the STAPLE consensus, sample training, and evaluation examples, is available at: https://github.com/MICLab-Unicamp/LongCIU/tree/main/src. The GitHub repository presents the minimum code necessary to reproduce processing and technical validation involved in making our annotations of GGO and Consolidations in Long COVID patients available, and all results included in the paper. Use the requirements.txt file to create an python environment suitable to run the code if necessary.
+
+# References
 
 [1] Carmo, Diedre S., et al. "MEDPSeg: Hierarchical polymorphic multitask learning for the segmentation of ground-glass opacities, consolidation, and pulmonary structures on computed tomography" arXiv preprint arXiv:2312.02365 (2024).
 
