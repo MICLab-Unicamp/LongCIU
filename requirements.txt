@@ -3,3 +3,6 @@ pytorch_lightning
 monai
 numpy
 SimpleITK
+sklearn
+seaborn
+matplotlib
