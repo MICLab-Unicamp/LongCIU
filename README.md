@@ -60,9 +60,7 @@ Output statistics from the SimpleITK STAPLE implementation, for reproducibility.
 
 # Code 
 
-The software repository for this project is: https://github.com/MICLab-Unicamp/LongCIU
-
-Source code to reproduce the STAPLE consensus, sample training, and evaluation examples, is available at: https://github.com/MICLab-Unicamp/LongCIU/tree/main/src. The GitHub repository presents the minimum code necessary to reproduce processing and technical validation involved in making our annotations of GGO and Consolidations in Long COVID patients available, including interrater results included in the paper (in the interrater.ipynb notebook). Use the requirements.txt file to create an python environment suitable to run the code if necessary.
+The software repository for this project is: https://github.com/MICLab-Unicamp/LongCIU. Source code reproduces the STAPLE consensus, sample training, evaluation examples, and technical validation. The GitHub repository presents the minimum code necessary to reproduce processing and technical validation involved in making our annotations of GGO and Consolidations in Long COVID patients available, including interrater Dice and Cohen's-Kappa figures included in the paper (in the [interrater.ipynb](interrater.ipynb) and [dice.ipynb](dice.ipynb) notebooks). Use the [requirements.txt](requirements.txt) file to create an python environment suitable to run the code if necessary.
 
 # References
 
