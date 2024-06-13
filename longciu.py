@@ -132,7 +132,7 @@ if __name__ == "__main__":
     import matplotlib.pyplot as plt
     from torchvision.utils import make_grid
 
-    longciu_datamodule = LongCIUDataModule(data_dir="../data", train_batch_size=4, eval_batch_size=4, num_workers=1, 
+    longciu_datamodule = LongCIUDataModule(data_dir="data", train_batch_size=4, eval_batch_size=4, num_workers=1, 
                                            train_transform=TrainTransform(), eval_transform=None)
     longciu_datamodule.prepare_data()
     longciu_datamodule.setup()

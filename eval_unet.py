@@ -115,11 +115,11 @@ def medpseg_output_wrapping(mode):
     '''
     Instead of reproducing MEDPseg, just get the output we already have
     '''
-    with open(os.path.join("../data", "longciu_splits.json"), 'r') as splits_file:
+    with open(os.path.join("data", "longciu_splits.json"), 'r') as splits_file:
         splits = json.load(splits_file)
 
-    data_path = os.path.join("../data", "longciu_img.nii.gz")
-    mask_path = os.path.join("../data", "longciu_medpseg_output.nii.gz")
+    data_path = os.path.join("data", "longciu_img.nii.gz")
+    mask_path = os.path.join("data", "longciu_medpseg_output.nii.gz")
     data, mask = sitk.GetArrayFromImage(sitk.ReadImage(data_path)), sitk.GetArrayFromImage(sitk.ReadImage(mask_path))
     
     # You can customize this preprocessing if you want!

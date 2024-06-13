@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", type=str, default="baseline_unet")
-    parser.add_argument("--data_dir", type=str, default=os.path.join("..", "data"))
+    parser.add_argument("--data_dir", type=str, default=os.path.join("data"))
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--ngpus", type=int, default=1)
     parser.add_argument("--num_workers", type=int, default=0)
