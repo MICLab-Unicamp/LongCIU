@@ -1,6 +1,6 @@
-# DOWNLOAD LINK: Under submission
+# DOWNLOAD LINK: https://doi.org/10.25820/data.007301
 
-Download the data and extract it on this folder with the following expected directory tree:
+Download all the data and put in this folder, resulting in the following expected directory tree:
 
 ## DIRECTORY TREE
 
@@ -14,3 +14,5 @@ Download the data and extract it on this folder with the following expected dire
 ├── longciu_STAPLE_tgt.nii.gz\
 ├── README.md\
 └── staple_pub_stats.json
+
+The main groundtruth for segmentation is the STAPLE_tgt, and the other files are auxiliary files and for uncertainty studies.
