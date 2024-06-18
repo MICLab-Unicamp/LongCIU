@@ -1,6 +1,20 @@
-# Long COVID Iowa-UNICAMP dataset
+# Long COVID Iowa-UNICAMP dataset code
 
-Download link: under submission.
+Download link: https://doi.org/10.25820/data.007301
+
+Data citation: 
+
+    @misc{CarmoDiedreS2024LCI,
+    title = {Long COVID Iowa-UNICAMP [dataset]},
+    author = {Carmo, Diedre S and Pezzulo, Alejandro A and Villacreses, Raul A and Eisenbeisz, McKenna L and Anderson, Rachel L and Van Dorin, Sarah E and Rittner, Leticia and Lotufo, 
+    Roberto A and Gerard, Sarah E and Reinhardt, Joseph M and Comellas, Alejandro P},
+    doi = {10.25820/data.007301},
+    keywords = {Post COVID-19;COVID-19;Segmentation},
+    language = {eng},
+    publisher = {University of Iowa},
+    subject = {Computed Tomography;Pulmonary Diseases},
+    year = {2024},
+    howpublished = {\url{https://doi.org/10.25820/data.007301}}}
 
 Thanks for downloading the Long COVID Iowa-UNICAMP dataset. If you use this data, please cite our dataset paper.
 
